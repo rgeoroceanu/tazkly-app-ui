@@ -15,7 +15,7 @@ class TimeslotApiService {
 
   getAvailableTimeslots(providerId: string, date: Date, duration: number): Promise<Array<Timeslot>> {
     return new Promise((resolveInner) => {
-      setTimeout(() => resolveInner(TIMESLOTS), 2000);
+      setTimeout(() => resolveInner(TIMESLOTS), 200);
     });
   }
 }

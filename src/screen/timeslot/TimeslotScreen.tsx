@@ -31,7 +31,8 @@ class TimeslotScreen extends React.Component<any, any> {
   }
 
   private onTimeslotSelect(timeslot: Timeslot, provider: Provider, orderItems) {
-    console.log(timeslot);
+    const { navigation } = this.props;
+    navigation.navigate('Confirmation', { provider: provider, orderItems: orderItems, timeslot: timeslot, title: "Order Confirmation" });
   }
 }
 

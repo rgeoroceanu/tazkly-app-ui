@@ -50,13 +50,13 @@ class ProviderApiService {
 
   searchProviders(subcategoryId: string): Promise<Array<Provider>> {
     return new Promise((resolveInner) => {
-      setTimeout(() => resolveInner(PROVIDERS), 2000);
+      setTimeout(() => resolveInner(PROVIDERS), 200);
     });
   }
 
   getProvider(id: string): Promise<Provider> {
     return new Promise((resolveInner) => {
-      setTimeout(() => resolveInner(PROVIDERS.find(p => p.id === id)), 2000);
+      setTimeout(() => resolveInner(PROVIDERS.find(p => p.id === id)), 200);
     })
   }
 }

@@ -9,6 +9,8 @@ import ProvidersScreen from "./src/screen/provider/ProvidersScreen";
 import ServiceSelectScreen from "./src/screen/service-select/ServiceSelectScreen";
 import TimeslotScreen from "./src/screen/timeslot/TimeslotScreen";
 import {GestureHandlerRootView} from "react-native-gesture-handler";
+import ConfirmationScreen from "./src/screen/confirmation/ConfirmationScreen";
+import SuccessScreen from "./src/screen/confirmation/SuccessScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +27,8 @@ export default function App() {
             <Stack.Screen name="Providers" component={ProvidersScreen} />
             <Stack.Screen name="ServiceSelect" component={ServiceSelectScreen} />
             <Stack.Screen name="Timeslot" component={TimeslotScreen} />
+            <Stack.Screen name="Confirmation" component={ConfirmationScreen} />
+            <Stack.Screen name="Success" component={SuccessScreen} options={{ headerShown: false, gestureEnabled: false }} />
           </Stack.Navigator>
         </NavigationContainer>
       </PaperProvider>
